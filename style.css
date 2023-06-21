@@ -141,8 +141,8 @@ svg{
 
 .content{
     flex-direction: column;
-    gap: 2px;
     margin-left: 20px;
+    align-items: flex-start;
 }
 
 .buttons{
@@ -181,9 +181,14 @@ svg{
 
 .card{
     margin-top: 10px;
-    grid-template-columns: repeat(2,minmax(300px,400px));
-    grid-template-rows: repeat(3,minmax(200px,250px));
+    grid-template-columns: repeat(2,minmax(300px,600px));
+    grid-template-rows: repeat(3,200px);
     gap: 30px;
+}
+
+.main-container{
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
 }
 
 .projects{
@@ -215,4 +220,74 @@ svg{
     gap: 30px;
     align-self: flex-end;
     margin-top: 30px;
+}
+
+.announcements{
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.other-details{
+    flex-direction: column;
+}
+
+.announcements>h3{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.data-points,.trending-topics{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    padding: 10px 20px 20px 10px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.404);
+}
+
+.data-points>p{
+    font-weight: normal;
+}
+
+.data-points>h4{
+    margin-top: 20px;
+}
+
+hr{
+    border: .5px solid rgba(0, 0, 0, 0.438);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.trending>h3{
+    margin-block: 10px;
+    font-weight: bold;
+}
+
+.forum>img{
+    width: 60px;
+    margin-top: 5px;
+}
+
+.about{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about>p{
+    font-weight: normal;
+    margin-left: 5px;
+    font-size: .75rem;
+}
+
+.trending-topics{
+    gap: 10px;
+}
+
+.sub{
+    color: rgb(59, 59, 59);
+    font-weight: 700;
 }
