@@ -43,8 +43,14 @@ h3{
     font-weight: 500;
 }
 
+h4{
+    font-size: 1rem;
+    /* margin-left: 20px; */
+}
+
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
 }
 
 header{
@@ -59,6 +65,7 @@ input[type=text]{
     border: 1px solid black;
     padding: 10px;
     border-radius: 20px;
+    background-color: aliceblue;
 }
 
 .search-icon{
@@ -124,7 +131,7 @@ svg{
 
 .profile-picture-big{
     width: 60px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .intro-details{
@@ -151,4 +158,61 @@ svg{
     color: white;
     font-weight: 700;
     font-size: 15px;
+}
+
+.user-btns:hover{
+    background-color:rgb(21, 110, 158) ;
+}
+
+.user-btns:active{
+    scale: .9;
+}
+
+.project-details{
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.project-details>h3{
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.card{
+    margin-top: 10px;
+    grid-template-columns: repeat(2,minmax(300px,400px));
+    grid-template-rows: repeat(3,minmax(200px,250px));
+    gap: 30px;
+}
+
+.projects{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.404);
+}
+
+.color-strip{
+    background-color: rgb(255, 208, 0);
+    height: 100%;
+    width: 15px;
+    border-radius: 5px 0 0 5px;
+    user-select: none;
+    color: rgb(255, 208, 0);
+}
+
+.details{
+    padding-inline: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details>p{
+    font-weight: normal;
+}
+
+.icons{
+    gap: 30px;
+    align-self: flex-end;
+    margin-top: 30px;
 }
